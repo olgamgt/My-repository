@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python --version'
-                sh 'python prueba.py'
+                sh 'python busqueda.py'
 
             }
         }
