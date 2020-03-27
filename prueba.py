@@ -1,9 +1,11 @@
 import sys
 
 try:
-    f = open('miarchivo.txt')
-    s = f.readline()
-    i = int(s.strip())
+    while True:
+        f = open('assets/map1.csv')
+        s = f.readline()
+        print(s)
+        i = int(s.strip())
 except IOError as (errno, strerror):
     print "Error E/S ({0}): {1}".format(errno, strerror)
 except ValueError:
