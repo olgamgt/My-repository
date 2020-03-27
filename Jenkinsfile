@@ -5,7 +5,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python --version'
-                sh 'python busqueda.py'
+                sh 'python gym-csv-loop.py assets/map1.csv 2 2 9 9 bfs'
+                sh 'python prueba.py'
 
             }
         }
