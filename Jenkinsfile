@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'python --version'
+                sh 'python -c "import sys; print sys.path"'
                 sh 'python gym-csv-loop.py assets/map1.csv 2 2 9 9 bfs'
                 sh 'python prueba.py'
 
